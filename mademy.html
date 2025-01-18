@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="x-icon" href="/Desktop/kkfile/mtk.jpg">
+    <link rel="stylesheet" href="j1.css">
+    <title>Edivate, The best restaurant</title>
+</head>
+<body>
+    <h1>Online Order</h1>
+    <script>
+        function myFunction(){
+            alert("Your order has been recieved and accepted by the chef!!!");
+        }
+
+    </script>
+    <form
+     action="/mademy.php" 
+     target="_self"
+     autocomplete="on"
+     method="post">
+        <div>
+        <label for="fname">First Name* : </label>
+        <input type="text" name="fname" id="fname" minlength="2" maxlength="10">
+        <br><br>
+        <label for="lname">Last Name* : </label>
+        <input type="text" name="lname" id="lname" minlength="2" maxlength="15">
+        <br><br>
+        <label for="email">Email* : </label> 
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="country">Country* : </label>
+        <select name="country" id="country">
+            <option>Nepal</option>
+      	<option>India</option>
+      	<option>China</option>
+      	<option>USA</option>
+      	<option>UK</option>
+      	<option>Argentina</option>
+      	<option>Croatia</option>
+      	<option>Costa Rica</option>
+      	<option>Cyprus</option>
+      	<option>Dominica</option>
+      	<option>Dominican Republic</option>
+      	<option>Democratic Republic of the Congo</option>
+      	<option>Egypt</option>
+      	<option>Estonia</option>
+      	<option>Ecuader</option>
+      	<option>Ethiopia</option>
+      	<option>Fiji</option>
+      	<option>France</option>
+      	<option>Finland</option>
+      	<option>Gabon</option>
+      	<option>Germany</option>
+      	<option>Ghana</option>
+      	<option>Greece</option>
+      	<option>Gernada</option>
+      	<option>Haiti</option>
+      	<option>Hungary</option>
+      	<option>Indonesia</option>
+      	<option>Iran</option>
+      	<option>Iraq</option>
+      	<option>Israel</option>
+      	<option>Italy</option>
+      	<option>Ireland</option>
+      	<option>Iceland</option>
+      	<option>Jamaica</option>
+      	<option>Japan</option>
+      	<option>Jordan</option>
+      	<option>Kazakhstan</option>
+      	<option>Kenya</option>
+      	<option>Kiribati</option>
+      	<option>South Korea</option>
+      	<option>Zambia</option>
+      	<option>Zimbabwe</option>
+      	<option>Kuwait</option>
+      	<option>Kyrgyzstann</option>
+      	<option>Maldives</option>
+      	<option>Mexico</option>
+      	<option>Micronesia</option>
+      	<option>Mali</option>
+      	<option>Malta</option>
+      	<option>Monaco</option>
+      	<option>Morocco</option>
+      	<option>Mozanbique</option>
+      	<option>Namibia</option>
+      	<option>Nassau</option>
+      	<option>Nauru</option>
+      	<option>Netherlands</option>
+      	<option>The New Zealand</option>
+      	<option>Nicaragua</option>
+      	<option>Niger</option>
+      	<option>Nigeria</option>
+      	<option>Norway</option>
+      	<option>Oman</option>
+      	<option>Pakistan</option>
+      	<option>Palau</option>
+      	<option>Portugal</option>
+      	<option>Philippines</option>
+      	<option>Poland</option>
+      	<option>Peru</option>
+      	<option>Qatar</option>
+      	<option>North Korea</option>
+      	<option>Russia</option>
+      	<option>Romania</option>
+      	<option>Ukraine</option>
+      	<option>Afganistan</option>
+      	<option>Andorra</option>
+      	<option>Armenia</option>
+      	<option>Angola</option>
+      	<option>Barbados</option>
+      	<option>Bahrain</option>
+      	<option>Botswana</option>
+      	<option>Brazil</option>
+      	<option>Burundi</option>
+      	<option>Burma</option>
+      	<option>Burkina Faso</option>
+      	<option>Bulgaria</option>
+      	<option>Brunei</option>
+      	<option>Cabo Verde</option>
+      	<option>Cambodia</option>
+      	<option>Cameroon</option>
+      	<option>Canada</option>
+      	<option>Chile</option>
+      	<option>Colombia</option>
+      	<option>Costa Rica</option>
+      	<option>Cyprus</option>
+      	<option>Croatia</option>
+      	<option>Cuba</option>
+      	<option>Czech Republic</option>
+      	<option>Czechoslovakia</option>
+      	<option>Djibouti</option>
+        </select>
+		<br><br>
+		<label for="postcode">Postal Code : </label>
+		<input type="number" name="postcode" id="postcode" minlength="3" maxlength="7">
+		<br><br>
+        <label for="adress">Address* : </label>
+        <input type="text" name="adress" id="adress">
+        <br><br>
+		<label for="pnum">Phone Number : </label>
+        <input type="number" name="pnum" id="pnum"><br><br>
+        <label for="gend">Gender* : </label><br>
+        <input type="radio" name="gend" id="male" value="Male">
+        <label for="male">Male</label>
+        <br><br>
+        <input type="radio" name="gend" id="fmale" value="Female">
+        <label for="fmale">Female</label>
+        <br><br>
+        <input type="radio" name="gend" id="other" value="Other">
+        <label for="other">Others</label>
+        <br><br>
+        <label for="food">What food do you want to order?</label>
+        <br><br>
+        <input type="checkbox" name="food1" id="food1" value="burger">
+        <label for="food1">Burger</label>
+        <br>
+        <input type="checkbox" name="food2" id="food2" value="pizza">
+        <label for="food2">Pizza</label>
+        <br>
+        <input type="checkbox" name="food3" id="food3" value="chik-momo">
+        <label for="food3">Chicken Momo</label>
+        <br>
+        <input type="checkbox" name="food4" id="food4" value="vegmomo">
+        <label for="food4">Veg Momo</label>
+        <br>
+        <input type="checkbox" name="food5" id="food5" value="noodle">
+        <label for="food5">Noodles</label>
+        <BR></BR>
+		<textarea name="msge" id="msge" cols="30" rows="10">Any other messages?</textarea><br><br>
+        <a href="signinmademy.html">Order</a>
+    </div>
+    </form>
+
+</body>
+</html>

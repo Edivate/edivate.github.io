@@ -1,0 +1,31 @@
+.spiderman-logo {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.spiderman-logo::before,
+.spiderman-logo::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border: 50px solid transparent;
+}
+
+.spiderman-logo::before {
+  border-bottom-color: red;
+  border-left-color: red;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.spiderman-logo::after {
+  border-top-color: red;
+  border-right-color: red;
+  right: 50%;
+  bottom: 0;
+  transform: translateX(50%);
+}
